@@ -20,14 +20,40 @@
 <SkeletonPrimaryAnimation/>
 :::
 
+:::snippet
+自定义样式
+当提供的模板不满足要求时，可以自定义样式，通过具名插槽`template`来自定义模板。
+<SkeletonSlot/>
+:::
+
+:::snippet
+加载状态
+可定义加载状态的模板和非加载状态的内容。
+<SkeletonLoading/>
+:::
+
+:::snippet
+防止渲染抖动
+在数据请求过快时，为了防止骨架屏刚被渲染接口数据就已经返回而导致用户界面会快速闪烁的问题，可以使用 throttle 属性来处理。
+<SkeletonThrottle/>
+:::
+
 ### API
 
 #### Skeleton Props
 
-| 参数        | 描述                         | 类型       | 默认值  |
-| ----------- | ---------------------------- | ---------- | ------- |
-| `loading`   | 是否展示骨架屏（加载中状态） | ` boolean` | `false` |
-| `animation` | 是否开启骨架屏动画           | `boolean`  | `false` |
+| 参数        | 描述                                                                                                       | 类型       | 默认值  |
+| ----------- | ---------------------------------------------------------------------------------------------------------- | ---------- | ------- |
+| `loading`   | 是否展示骨架屏默认 slot 内容（为 true 时，需要定义具名插槽 template 的内容；为 false，则直接展示组件子内容 | ` boolean` | `false` |
+| `animation` | 是否开启骨架屏动画                                                                                         | `boolean`  | `false` |
+| `throttle`  | 渲染延迟（以毫秒为单位）                                                                                   | `number`   | `0`     |
+
+#### Skeleton Slot
+
+| 参数       | 描述                     | 类型     |
+| ---------- | ------------------------ | -------- |
+| `default`  | 真正渲染的 DOM           | `object` |
+| `template` | 渲染 skeleton 模板的内容 | `object` |
 
 #### SkeletonLine Props
 

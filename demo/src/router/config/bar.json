@@ -69,6 +69,10 @@
         {
           "name": "Empty  空状态",
           "src": "empty"
+        },
+        {
+          "name": "Skeleton 骨架屏",
+          "src": "skeleton"
         }
       ]
     },
@@ -98,10 +102,6 @@
         {
           "name": "Drawer 抽屉",
           "src": "drawer"
-        },
-        {
-          "name": "Skeleton 骨架屏",
-          "src": "skeleton"
         }
       ]
     },

@@ -3,6 +3,7 @@ import { PropType } from 'vue';
 export type SkeletonProps = {
   loading?: boolean;
   animation?: boolean;
+  throttle?: number;
 };
 
 export type SkeletonLineProps = {

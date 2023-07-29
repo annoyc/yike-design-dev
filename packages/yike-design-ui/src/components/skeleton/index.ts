@@ -1,7 +1,7 @@
 import Skeleton from './src/skeleton.vue';
 import SkeletonLine from './src/skeleton-line.vue';
 import SkeletonShape from './src/skeleton-shape.vue';
-import { withInstall } from '@yike/utils';
+import { withInstall } from '../../utils/index';
 
 export const YkSkeleton = withInstall(Skeleton);
 export const YkSkeletonLine = withInstall(SkeletonLine);

@@ -133,7 +133,5 @@ export function isString(obj: any): obj is string {
 }
 
 export function isNumber(obj: any): obj is number {
-  return (
-    Object.prototype.toString.call(obj) === '[object Number]' && obj === obj
-  ); // eslint-disable-line
+  return Object.prototype.toString.call(obj) === '[object Number]';
 }

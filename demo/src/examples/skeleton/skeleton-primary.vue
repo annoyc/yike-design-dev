@@ -1,6 +1,6 @@
 <template>
   <yk-skeleton>
-    <yk-space direction="vertical" :style="{ width: '100%' }" size="large">
+    <yk-space direction="vertical" :style="{ width: '100%' }" size="xl">
       <yk-skeleton-line :rows="3" />
       <yk-skeleton-shape />
     </yk-space>
